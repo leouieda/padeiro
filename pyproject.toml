@@ -1,0 +1,27 @@
+# Project configuration and build system information
+
+[build-system]
+requires = ["setuptools>=42", "setuptools_scm[toml]>=3.4", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools_scm]
+write_to = "padeiro/_version.py"
+
+[tool.black]
+line-length = 88
+target-version = ['py36', 'py37', 'py38']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | build
+  | dist
+  | doc
+)/
+'''

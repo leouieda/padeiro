@@ -1,0 +1,3 @@
+*.egg-info
+dist
+padeiro/_version.py

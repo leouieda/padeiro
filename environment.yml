@@ -1,0 +1,21 @@
+name: padeiro
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.8
+  - pip
+  # Requirements
+  - click >=6.5
+  - pooch >=0.7.0
+  - toml >=0.10.0
+  # Development
+  - setuptools >=42
+  - setuptools_scm >=3.4
+  - wheel
+  - black
+  - flake8
+  - pytest
+  - pytest-cov
+  - coverage
+  - sphinx
