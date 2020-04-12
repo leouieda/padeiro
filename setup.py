@@ -22,7 +22,7 @@ setup(
     author_email="leouieda@gmail.com",
     url="https://github.com/leouieda/padeiro",
     license="MIT",
-    packages=find_packages(exclude=["doc", "tests"]),
+    packages=find_packages(exclude=["doc", "tests", "recipes"]),
     python_requires=">=3.6",
     install_requires=["click>=6.5", "pooch>=0.7.0", "toml>=0.9.4"],
     classifiers=[
